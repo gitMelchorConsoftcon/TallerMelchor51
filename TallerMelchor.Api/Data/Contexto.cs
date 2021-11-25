@@ -15,5 +15,14 @@ namespace TallerMelchor.Api.Data
 
         public DbSet<Marca> Marca { get; set; }
 
+        public DbSet<Color> Color { get; set; }
+
+        public DbSet<Servicio> Servicio { get; set; }
+
+        public DbSet<Vehiculo> Vehiculo { get; set;}
+
+        public DbSet<Cliente> Cliente { get; set; }
+
+
     }
 }

@@ -1,28 +1,30 @@
 ﻿using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
-using TallerMelchor.Api.DTOS;
 
 namespace TallerMelchor.Api.Models
 {
-    public class Marca
+    public class Cliente
     {
-        public Marca()
-        {
-
-        }
-        public Marca(MarcaDTO nuevo)
-        {
-            Nombre = nuevo.Nombre;
-            Activo = true;
-        }
-
         [Key]
-        public int IdMarca { get; set; }
+        public int IdCliente { get; set; }
+
         [Required]
-        [MaxLength(40)]
+        [MaxLength(90)]
         public string Nombre { get; set; }
+    
+        [MaxLength(10)]
+        public string Telefono { get; set; }
+       
+        [MaxLength(120)]
+        public string Correo { get; set; }
+        
+        [MaxLength(250)]
+        public string Direccion { get; set; }
+
         [Required]
         public bool Activo { get; set; }
+
         public virtual List<Vehiculo> Vehiculos { get; set; }
+
     }
 }

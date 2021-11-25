@@ -4,25 +4,30 @@ using TallerMelchor.Api.DTOS;
 
 namespace TallerMelchor.Api.Models
 {
-    public class Marca
+    public class Color
     {
-        public Marca()
+
+        public Color()
         {
 
         }
-        public Marca(MarcaDTO nuevo)
+
+        public Color(ColorDTO nuevo)
         {
-            Nombre = nuevo.Nombre;
-            Activo = true;
+            this.Nombre = nuevo.Nombre;
+            this.Activo = true;
         }
 
         [Key]
-        public int IdMarca { get; set; }
+        public int IdColor { get; set; }
+
         [Required]
-        [MaxLength(40)]
+        [MaxLength(15)]
         public string Nombre { get; set; }
+
         [Required]
         public bool Activo { get; set; }
+
         public virtual List<Vehiculo> Vehiculos { get; set; }
     }
 }
