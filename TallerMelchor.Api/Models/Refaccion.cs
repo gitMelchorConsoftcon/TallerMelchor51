@@ -1,4 +1,6 @@
-﻿using System.ComponentModel.DataAnnotations;
+﻿using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 
 namespace TallerMelchor.Api.Models
 {
@@ -23,6 +25,11 @@ namespace TallerMelchor.Api.Models
         [Required]
         public bool Activo { get; set; }
 
+        [ForeignKey("IdCategoria")]
+        public virtual Categoria Categoria { get; set; }
+
+        public virtual List<EntradaDetalle> 
+            EntradaDetalle { get; set; }
 
     }
 }

@@ -1,4 +1,5 @@
-﻿using System.ComponentModel.DataAnnotations;
+﻿using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 
 namespace TallerMelchor.Api.Models
 {
@@ -26,5 +27,10 @@ namespace TallerMelchor.Api.Models
 
         [Required]
         public bool Activo { get; set; }
+
+
+        public virtual List<Entrada> 
+            Entradas { get; set; }
+
     }
 }

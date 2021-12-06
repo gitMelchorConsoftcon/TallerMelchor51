@@ -1,4 +1,5 @@
 ﻿using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 
 namespace TallerMelchor.Api.Models
 {
@@ -22,10 +23,15 @@ namespace TallerMelchor.Api.Models
         public double Precio { get; set; }
 
         [Required]
-        public int Estatus { get; set; }
-
-        [Required]
         public bool Activo { get; set; }
+
+        [ForeignKey("IdEntrada")]
+        public virtual Entrada 
+            Entrada { get; set; }
+
+        [ForeignKey("IdRefaccion")]
+        public virtual Refaccion 
+            Refaccion { get; set; }
 
     }
 }

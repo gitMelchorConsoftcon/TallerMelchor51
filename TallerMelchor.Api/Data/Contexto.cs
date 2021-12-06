@@ -23,6 +23,6 @@ namespace TallerMelchor.Api.Data
 
         public DbSet<Cliente> Cliente { get; set; }
 
-
+        public DbSet<Entrada> Entrada { get; set; }
     }
 }
