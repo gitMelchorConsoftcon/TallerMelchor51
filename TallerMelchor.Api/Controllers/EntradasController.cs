@@ -3,6 +3,7 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using System.Linq;
 using TallerMelchor.Api.Data;
+using TallerMelchor.Api.DTOS;
 using TallerMelchor.Api.Models;
 
 namespace TallerMelchor.Api.Controllers
@@ -38,10 +39,10 @@ namespace TallerMelchor.Api.Controllers
         }
 
         [HttpPost]
-        public IActionResult Guardar(Entrada obj)
+        public IActionResult Guardar(EntradaDto obj)
         {
             //var nuevo = new Entrada(obj);
-            _db.Entrada.Add(obj);
+            _db.Entrada.Add(new Entrada( obj));
             _db.SaveChanges();
             return Ok(obj);
         }

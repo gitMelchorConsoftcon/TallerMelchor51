@@ -1,10 +1,26 @@
 ﻿using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
+using TallerMelchor.Api.DTOS;
 
 namespace TallerMelchor.Api.Models
 {
     public class EntradaDetalle
     {
+
+        public EntradaDetalle()
+        {
+
+        }
+
+        public EntradaDetalle(EntradaDetalleDto nuevo)
+        {
+            this.IdRefaccion = nuevo.IdRefaccion;
+            this.Cantidad=nuevo.Cantidad;
+            this.Precio=nuevo.Precio;
+            this.Activo = true;
+        }
+
+
         [Key]
         public int IdEntradaDetalle { get; set; }
         
