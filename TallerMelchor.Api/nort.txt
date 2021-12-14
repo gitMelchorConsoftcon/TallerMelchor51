@@ -1,0 +1,88 @@
+1.-Seleccionar los campos OrderID, ProductID y UnitPrice de la tabla Order Details donde el OrderID
+sea igual a 10251
+
+
+2.-Seleccionar los campos OrderID, ProductID y UnitPrice de la tabla Order Details donde OrderID sea
+igual a 10251 y ProductID sea igual a 57
+
+
+
+3.-Seleccionar los campos OrderID, ProductID y UnitPrice de la tabla Order Details donde el dato
+almacenado en OrderID sea mayor o igual a 11000 y OrderID sea menor o igual a 11003
+
+
+4.-Seleccionar todos los campos de la tabla Order Details donde el campo OrderID tenga alguno de los
+siguientes datos: 10248, 10255 y 10270
+
+
+5.-Ordenar de manera ascendente los registros almacenados en los campos CategoryName y
+CategoryID de la tabla Categories
+
+
+6.-Haciendo uso de INNER JOIN mostrar los campos OrderDate y ProductID de las tablas Orders y Order Details
+donde el dato almacenado en el campo OrderDate sea igual 8 de Julio de 1996
+
+
+7.-Se desea mostrar las cantidades de cada producto que se han vendido y la fecha de la venta de cada uno de
+ellos,Campos a mostrar: ProductID, ProductName, Quantity y OrderDate
+
+
+8.-Seleccionar todos los campos de la tabla clientes, ordenado por nombre del
+contacto de la compañía, alfabéticamente
+
+9.-Seleccionar todos los clientes que cuenten con FAX
+
+10.-Seleccionar todos los clientes que no cuenten con FAX, del país de USA
+
+
+11.-Obtener todos los productos descontinuados y sin stock, que pertenecen a
+las categorías 1, 3, 4 y 7.
+
+
+12.-Seleccionar todos los campos de la tabla detalle de la orden, ordenada por
+cantidad pedida, ascendentemente
+
+
+13.-Seleccionar los productos vigentes cuyos precios unitarios están entre 35
+y 250, sin stock en almacén. Pertenecientes a las categorías 1, 3, 4, 7 y 8, que son
+distribuidos por los proveedores 2, 4, 6, 7 y 9
+
+
+
+14.-Seleccionar todos los campos de los productos descontinuados, que
+pertenezcan a los proveedores con códigos: 1, 3, 7, 8 y 9, que tengan stock en
+almacén, y al mismo tiempo que sus precios unitarios estén entre 39 y 190, ordenados
+por código de proveedor y precio unitario de manera ascendente.
+
+
+
+15.-Mostrar: núm. de la orden, fecha, nombre y dirección del cliente,
+nombre y apellidos del empleado. Nombre del producto comprado y nombre del
+proveedor
+
+
+16.-Visualizar el máximo y el mínimo precio de los productos por categoría,
+mostrar el nombre de la categoría.
+
+
+17.-Calcular cuántos clientes existe en cada país
+
+
+
+18.-Calcular cuántos clientes existen en cada ciudad.
+
+
+19.-Calcular el stock total de los productos por cada categoría. Mostrar el
+nombre de la categoría y el stock por categoría.
+
+
+20.-Calcular el stock total de los productos por cada categoría. Mostrar el
+nombre de la categoría y el stock por categoría. Solamente las categorías 2, 5 y 8.
+
+
+21.-Obtener el nombre del cliente, nombre del proveedor, nombre del
+empleado y el nombre de los productos que están en la orden 10250.
+
+22.-Mostrar el número de órdenes realizadas de cada uno de los clientes por
+año.
+
